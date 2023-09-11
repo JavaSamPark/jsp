@@ -1,4 +1,4 @@
-package ch14;
+package ch15;
 
 /**
  * Copyright(c) 2001 iSavvix Corporation (http://www.isavvix.com/)
@@ -38,10 +38,10 @@ import java.util.Vector;
  */
 public class DBConnectionMgr {
     private Vector connections = new Vector(10);
-    private String _driver = "_________________________",
-    _url = "jdbc:mysql://____________/______?useUnicode=true&characterEncoding=EUC_KR",
-    _user = "____________",
-    _password = "__________";
+    private String _driver = "org.gjt.mm.mysql.Driver",
+    _url = "jdbc:mysql://127.0.0.1:3306/mydb?useUnicode=true&characterEncoding=EUC_KR",
+    _user = "root",
+    _password = "1234";
     
     private boolean _traceOn = false;
     private boolean initialized = false;
